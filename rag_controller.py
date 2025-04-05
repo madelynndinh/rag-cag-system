@@ -434,7 +434,7 @@ def test_rag_controller():
     """Test the RAG controller with all PDF files in the pdf-test directory."""
     # Initialize RAG controller
     rag = RAGController(
-        reranking_strategy="bm25",  # Using BM25 for precise matching
+        reranking_strategy="hybrid", 
         llm_reranking_strategy="llm_rerank",  # Using LLM reranking for responses
         max_context_docs=4  # Allow for more context
     )

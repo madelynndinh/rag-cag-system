@@ -14,12 +14,14 @@ from llama_index.core.output_parsers import PydanticOutputParser
 from llama_index.core.prompts import PromptTemplate
 from llama_index.core.prompts.base import PromptTemplate
 from llama_index.core.retrievers import QueryFusionRetriever
+from llama_index.embeddings.openai import OpenAIEmbedding
+import faiss
+import numpy as np
 
 
 from llama_index.retrievers.bm25 import BM25Retriever
 import Stemmer
 import logging
-
 
 
 LOGGER_NAME = "rerankers"
@@ -38,10 +40,11 @@ class ReRankersInfo(Enum):
         NO_OF_DOCUMENTS_TO_RERANK (int): Number of documents to rerank.
         TOP_K_DOCUMENTS_TO_RETURN (int): Number of documents to return after reranking.
     """
-    STRATEGIES_AVAILABLE_FOR_RERANKING_RETRIEVED_DOCUMENTS = ["bm25", "queryfusion"]
-    DEFAULT_STRATEGY_FOR_RERANKING_RETRIEVED_DOCUMENTS = STRATEGIES_AVAILABLE_FOR_RERANKING_RETRIEVED_DOCUMENTS[0]
+    STRATEGIES_AVAILABLE_FOR_RERANKING_RETRIEVED_DOCUMENTS = ["bm25", "vector", "hybrid", "queryfusion"]
+    DEFAULT_STRATEGY_FOR_RERANKING_RETRIEVED_DOCUMENTS = "hybrid"
     NO_OF_DOCUMENTS_TO_RERANK = 20  # Default number of documents to rerank
     TOP_K_DOCUMENTS_TO_RETURN = 4  # Only will return top-k documents after reranking
+    HYBRID_ALPHA = 0.5  # Weight for combining BM25 and vector scores (0.5 means equal weight)
 
 
 # ----------------------------- RE-RANKERS FOR LLM GENERATED RESPONSES -----------------------------
@@ -218,6 +221,115 @@ def _rerank_retrieved_documents_using_queryfusion(
         # Return original document IDs if reranking fails
         return retrieved_documents[:ReRankersInfo.TOP_K_DOCUMENTS_TO_RETURN.value]
 
+# Re-Rank the Retrieved Documents using Vector Search
+def _rerank_retrieved_documents_using_vector(
+    query: str, retrieved_documents: List[Document], **kwargs
+) -> List[Document]:
+    """
+    Re-rank the retrieved documents using vector search with direct embeddings.
+
+    Args:
+        query (str): User query.
+        retrieved_documents (List[Document]): Retrieved documents.
+        **kwargs: Additional arguments for vector search.
+
+    Returns:
+        List[Document]: Re-ranked retrieved documents based on vector search.
+    """
+    try:
+        logger.info(f"Reranking {len(retrieved_documents)} documents using vector search")
+        
+        # Limit the number of documents to rerank
+        docs_to_rerank = retrieved_documents[:ReRankersInfo.NO_OF_DOCUMENTS_TO_RERANK.value]
+        logger.info(f"Reranking top {len(docs_to_rerank)} documents")
+        
+        # Initialize embedding model
+        embed_model = OpenAIEmbedding()
+        
+        # Get embeddings for all documents
+        doc_texts = [doc.text for doc in docs_to_rerank]
+        doc_embeddings = embed_model.get_text_embedding_batch(doc_texts)
+        
+        # Convert embeddings to numpy array
+        doc_embeddings_np = np.array(doc_embeddings).astype('float32')
+        
+        # Initialize FAISS index
+        dimension = doc_embeddings_np.shape[1]  # Get embedding dimension
+        index = faiss.IndexFlatL2(dimension)
+        
+        # Add document embeddings to index
+        index.add(doc_embeddings_np)
+        
+        # Get query embedding
+        query_embedding = embed_model.get_text_embedding(query)
+        query_embedding_np = np.array([query_embedding]).astype('float32')
+        
+        # Search for similar documents
+        k = min(ReRankersInfo.TOP_K_DOCUMENTS_TO_RETURN.value, len(docs_to_rerank))
+        distances, indices = index.search(query_embedding_np, k)
+        
+        # Get reranked documents
+        reranked_docs = [docs_to_rerank[i] for i in indices[0]]
+        
+        logger.info(f"Vector search reranking complete, returning {len(reranked_docs)} documents")
+        return reranked_docs
+    except Exception as e:
+        logger.error(f"Error in re-ranking using vector search: {str(e)}", exc_info=True)
+        return retrieved_documents[:ReRankersInfo.TOP_K_DOCUMENTS_TO_RETURN.value]
+
+def _rerank_retrieved_documents_using_hybrid(
+    query: str, retrieved_documents: List[Document], **kwargs
+) -> List[Document]:
+    """
+    Re-rank the retrieved documents using hybrid search (combining BM25 and vector search).
+
+    Args:
+        query (str): User query.
+        retrieved_documents (List[Document]): Retrieved documents.
+        **kwargs: Additional arguments for hybrid search.
+
+    Returns:
+        List[Document]: Re-ranked retrieved documents based on hybrid search.
+    """
+    try:
+        logger.info(f"Reranking {len(retrieved_documents)} documents using hybrid search")
+        
+        # Get rankings from both methods
+        bm25_docs = _rerank_retrieved_documents_using_bm25(query, retrieved_documents)
+        vector_docs = _rerank_retrieved_documents_using_vector(query, retrieved_documents)
+        
+        # Create score dictionaries
+        bm25_scores = {doc.text: 1.0 - (i / len(bm25_docs)) for i, doc in enumerate(bm25_docs)}
+        vector_scores = {doc.text: 1.0 - (i / len(vector_docs)) for i, doc in enumerate(vector_docs)}
+        
+        # Combine scores
+        alpha = ReRankersInfo.HYBRID_ALPHA.value
+        hybrid_scores = {}
+        
+        # Get all unique documents
+        all_docs = set(doc.text for doc in retrieved_documents[:ReRankersInfo.NO_OF_DOCUMENTS_TO_RERANK.value])
+        
+        for doc_text in all_docs:
+            bm25_score = bm25_scores.get(doc_text, 0.0)
+            vector_score = vector_scores.get(doc_text, 0.0)
+            hybrid_scores[doc_text] = (alpha * bm25_score) + ((1 - alpha) * vector_score)
+        
+        # Sort documents by hybrid score
+        sorted_docs = sorted(
+            [(doc, hybrid_scores.get(doc.text, 0.0)) for doc in retrieved_documents],
+            key=lambda x: x[1],
+            reverse=True
+        )
+        
+        # Return top k documents
+        reranked_docs = [doc for doc, _ in sorted_docs[:ReRankersInfo.TOP_K_DOCUMENTS_TO_RETURN.value]]
+        
+        logger.info(f"Hybrid search reranking complete, returning {len(reranked_docs)} documents")
+        return reranked_docs
+    except Exception as e:
+        logger.error(f"Error in hybrid re-ranking: {str(e)}", exc_info=True)
+        return retrieved_documents[:ReRankersInfo.TOP_K_DOCUMENTS_TO_RETURN.value]
+
 # Re-Rank the Retrieved Documents by Strategy
 def rerank_retrieved_documents_by_strategy(
     query: str, retrieved_documents: List[Document], strategy: str = None, **kwargs
@@ -248,10 +360,19 @@ def rerank_retrieved_documents_by_strategy(
         logger.info(f"Strategy validated: {strategy}")
 
         # Re-rank the retrieved documents based on the strategy
-        reranked_documents = []
         if strategy == "bm25":
             logger.info("Using BM25 reranking strategy")
             reranked_documents = _rerank_retrieved_documents_using_bm25(
+                query=query, retrieved_documents=retrieved_documents, **kwargs
+            )
+        elif strategy == "vector":
+            logger.info("Using vector search reranking strategy")
+            reranked_documents = _rerank_retrieved_documents_using_vector(
+                query=query, retrieved_documents=retrieved_documents, **kwargs
+            )
+        elif strategy == "hybrid":
+            logger.info("Using hybrid search reranking strategy")
+            reranked_documents = _rerank_retrieved_documents_using_hybrid(
                 query=query, retrieved_documents=retrieved_documents, **kwargs
             )
         elif strategy == "queryfusion":
@@ -259,11 +380,6 @@ def rerank_retrieved_documents_by_strategy(
             reranked_documents = _rerank_retrieved_documents_using_queryfusion(
                 query=query, retrieved_documents=retrieved_documents, **kwargs
             )
-        elif strategy == "sentence_transformer":
-            logger.info("Using SentenceTransformer reranking strategy")
-            # This would be implemented in a similar way to the LLM response reranking
-            # For now, we'll just return the original documents
-            reranked_documents = retrieved_documents[:ReRankersInfo.TOP_K_DOCUMENTS_TO_RETURN.value]
         
         logger.info(f"Reranking complete, returning {len(reranked_documents)} documents")
         return reranked_documents
