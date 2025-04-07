@@ -1,0 +1,14 @@
+{
+  "recall@1": 0.04259461697722567,
+  "recall@3": 0.12869294184076793,
+  "recall@5": 0.17212089215132692,
+  "recall@10": 0.17212089215132692,
+  "precision@1": 1.0,
+  "precision@3": 1.0066666666666666,
+  "precision@5": 1.01,
+  "precision@10": 1.01,
+  "exact_match": 0.56,
+  "f1": 0.5966666666666667,
+  "retrieval_accuracy": 1.0,
+  "no_retrieval_accuracy": 0.26
+}

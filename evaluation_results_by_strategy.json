@@ -1,0 +1,67 @@
+{
+    "bm25": {
+        "recall@1": 0.041763833992094865,
+        "recall@3": 0.1275642292490119,
+        "recall@5": 0.16932806324110675,
+        "recall@10": 0.16932806324110675,
+        "precision@1": 1.0,
+        "precision@3": 1.0166666666666666,
+        "precision@5": 1.0125,
+        "precision@10": 1.0125,
+        "exact_match": 0.55,
+        "f1": 0.575,
+        "retrieval_accuracy": 1.0
+    },
+    "vector": {
+        "recall@1": 0.041763833992094865,
+        "recall@3": 0.1275642292490119,
+        "recall@5": 0.16932806324110675,
+        "recall@10": 0.16932806324110675,
+        "precision@1": 1.0,
+        "precision@3": 1.0166666666666666,
+        "precision@5": 1.0125,
+        "precision@10": 1.0125,
+        "exact_match": 0.5,
+        "f1": 0.525,
+        "retrieval_accuracy": 1.0
+    },
+    "hybrid": {
+        "recall@1": 0.041763833992094865,
+        "recall@3": 0.1275642292490119,
+        "recall@5": 0.16932806324110675,
+        "recall@10": 0.16932806324110675,
+        "precision@1": 1.0,
+        "precision@3": 1.0166666666666666,
+        "precision@5": 1.0125,
+        "precision@10": 1.0125,
+        "exact_match": 0.5,
+        "f1": 0.525,
+        "retrieval_accuracy": 1.0
+    },
+    "queryfusion": {
+        "recall@1": 0.041763833992094865,
+        "recall@3": 0.1275642292490119,
+        "recall@5": 0.16932806324110675,
+        "recall@10": 0.16932806324110675,
+        "precision@1": 1.0,
+        "precision@3": 1.0166666666666666,
+        "precision@5": 1.0125,
+        "precision@10": 1.0125,
+        "exact_match": 0.6,
+        "f1": 0.625,
+        "retrieval_accuracy": 1.0
+    },
+    "no_retrieval": {
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@3": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "exact_match": 0.05,
+        "f1": 0.05,
+        "retrieval_accuracy": 1.0
+    }
+}

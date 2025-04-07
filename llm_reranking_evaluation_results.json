@@ -1,0 +1,27 @@
+{
+    "llm_reranker": {
+        "exact_match": 0.64,
+        "f1": 0.6866666666666665,
+        "reranking_time": 0.8812003707885743
+    },
+    "llm_rerank": {
+        "exact_match": 0.62,
+        "f1": 0.6666666666666665,
+        "reranking_time": 0.9164467573165893
+    },
+    "sentence_transformer": {
+        "exact_match": 0.46,
+        "f1": 0.49633333333333335,
+        "reranking_time": 3.8504711532592775
+    },
+    "ensemble": {
+        "exact_match": 0.58,
+        "f1": 0.6166666666666666,
+        "reranking_time": 5.274277591705323
+    },
+    "no_reranking": {
+        "exact_match": 0.62,
+        "f1": 0.6533333333333333,
+        "reranking_time": 0.0
+    }
+}

@@ -124,3 +124,41 @@ def parse_pdf(pdf_path: str) -> List[Document]:
     except Exception as e:
         logger.error(f"Error parsing PDF file {pdf_path}: {str(e)}")
         raise
+
+def print_section_contents(pdf_path: str):
+    """Print the content of each section after parsing a PDF file.
+    
+    Args:
+        pdf_path: Path to the PDF file
+    """
+    try:
+        documents = parse_pdf(pdf_path)
+        
+        print(f"\nParsed {len(documents)} document blocks from {pdf_path}")
+        print("\n" + "="*80)
+        print(f"SECTIONS IN {os.path.basename(pdf_path)}")
+        print("="*80)
+        
+        for i, doc in enumerate(documents):
+            print(f"\nSECTION {i+1}:")
+            print(f"Title: {doc.metadata.get('title', 'No title')}")
+            print(f"Type: {doc.metadata.get('type', 'Unknown type')}")
+            print(f"Page: {doc.metadata.get('page_num', 'Unknown page')}")
+            print("-"*40)
+            print(doc.text[:500] + ("..." if len(doc.text) > 500 else ""))
+            print("-"*40)
+            
+    except Exception as e:
+        print(f"Error printing section contents for {pdf_path}: {str(e)}")
+
+# Demonstration code for parsing CR2024-009.pdf
+if __name__ == "__main__":
+    # Configure basic logging
+    logging.basicConfig(level=logging.INFO, 
+                       format='%(levelname)s:%(name)s:%(message)s')
+    
+    # Specify the path to the PDF file
+    pdf_file = "pdf-test/cr2024-009.pdf"
+    
+    # Print content in each section after parsing
+    print_section_contents(pdf_file)

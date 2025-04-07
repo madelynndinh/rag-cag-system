@@ -1,0 +1,3146 @@
+{
+  "What is Edward Corser's occupation?": {
+    "no_reranking": {
+      "answer": "a clerk",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.0284600257873535,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9854791164398193,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "a clerk",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 3.299116849899292,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.404646158218384,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "What is Frederick Dundas's occupation?": {
+    "no_reranking": {
+      "answer": "British politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      }
+    },
+    "llm_reranker": {
+      "answer": "British politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      },
+      "reranking_time": 0.7241458892822266,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "British politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      },
+      "reranking_time": 0.813974142074585,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "politician and colonial administrator",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.4
+      },
+      "reranking_time": 2.1611478328704834,
+      "reranked_order": [
+        "response_2",
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "British politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      },
+      "reranking_time": 2.846122980117798,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "What is Walter de la Pole's occupation?": {
+    "no_reranking": {
+      "answer": "an English politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      }
+    },
+    "llm_reranker": {
+      "answer": "an English politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      },
+      "reranking_time": 0.980370044708252,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "an English politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      },
+      "reranking_time": 0.9698097705841064,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "an English politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      },
+      "reranking_time": 2.0156338214874268,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "an English politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      },
+      "reranking_time": 2.698349952697754,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "What is Paul Caillaud's occupation?": {
+    "no_reranking": {
+      "answer": "Deputy for Ni\u00e8vre",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "economist",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.7428858280181885,
+      "reranked_order": [
+        "response_1"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "economist",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.7240688800811768,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "military officer (Reserve)",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.8930909633636475,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "economist",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.7182860374450684,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "What is Bridie O'Flaherty's occupation?": {
+    "no_reranking": {
+      "answer": "cashier",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Irish folk musician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.7824270725250244,
+      "reranked_order": [
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "Irish folk musician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.1194519996643066,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "cashier",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.77331280708313,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Irish folk musician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.9007568359375,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "What is Marie-France Mignal's occupation?": {
+    "no_reranking": {
+      "answer": "actress",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "actress",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7375190258026123,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "actress",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8013529777526855,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "actress",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.5240941047668457,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "actress",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.1485509872436523,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "What is Petru Vlah's occupation?": {
+    "no_reranking": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Moldovan politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      },
+      "reranking_time": 0.7979929447174072,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "Moldovan politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      },
+      "reranking_time": 1.13883376121521,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.05587100982666,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Moldovan politician",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      },
+      "reranking_time": 3.2281668186187744,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "What is Fidel Antu\u00f1a Batista's occupation?": {
+    "no_reranking": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6733372211456299,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.5827538967132568,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "guerrilla",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.420192003250122,
+      "reranked_order": [
+        "response_2",
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.8366401195526123,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "What is Petr Mlsna's occupation?": {
+    "no_reranking": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.723024845123291,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.607882022857666,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "politician",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.6593568325042725,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "library science",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.7739830017089844,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    }
+  },
+  "In what city was Robert Crannell Minor born?": {
+    "no_reranking": {
+      "answer": "New York City",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "New York City",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.010071039199829,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "New York City",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8172409534454346,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "New York City",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.4157309532165527,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Birmingham, Alabama",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 3.532731771469116,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what city was Diana Estrada born?": {
+    "no_reranking": {
+      "answer": "Jalisco",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Mexico City",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7287261486053467,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "Mexico City",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9377021789550781,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "Rio Piedras",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.0316739082336426,
+      "reranked_order": [
+        "response_2",
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Mexico City",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.345917224884033,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what city was Hansi Niese born?": {
+    "no_reranking": {
+      "answer": "Austrian",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Leipzig",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6265017986297607,
+      "reranked_order": [
+        "response_2"
+      ],
+      "best_response_id": "response_2"
+    },
+    "llm_rerank": {
+      "answer": "Leipzig",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 5.179497957229614,
+      "reranked_order": [
+        "response_2"
+      ],
+      "best_response_id": "response_2"
+    },
+    "sentence_transformer": {
+      "answer": "Burg",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.938675880432129,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "Leipzig",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.3477370738983154,
+      "reranked_order": [
+        "response_2",
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_2"
+    }
+  },
+  "In what city was Pierre Petit born?": {
+    "no_reranking": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Montlu\u00e7on",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6849379539489746,
+      "reranked_order": [
+        "response_2"
+      ],
+      "best_response_id": "response_2"
+    },
+    "llm_rerank": {
+      "answer": "Montlu\u00e7on",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6070818901062012,
+      "reranked_order": [
+        "response_2"
+      ],
+      "best_response_id": "response_2"
+    },
+    "sentence_transformer": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.772580862045288,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.1251487731933594,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what city was Nina Dittrich born?": {
+    "no_reranking": {
+      "answer": "Vienna",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Vienna",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6528000831604004,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Vienna",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6145739555358887,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Los Angeles",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.9003510475158691,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "Vienna",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.337998867034912,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what city was Kazuhiro Suzuki born?": {
+    "no_reranking": {
+      "answer": "Tokyo",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Tokyo",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.090590238571167,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Tokyo",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9070327281951904,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Iwate",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.5359110832214355,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Iwate",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 3.435286045074463,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    }
+  },
+  "In what city was Pierre-Yves Barr\u00e9 born?": {
+    "no_reranking": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.0248827934265137,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8806722164154053,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.645326852798462,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Paris",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.3498191833496094,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what city was Florian Reichst\u00e4dter born?": {
+    "no_reranking": {
+      "answer": "Vienna",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Passau",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.82843017578125,
+      "reranked_order": [
+        "response_2"
+      ],
+      "best_response_id": "response_2"
+    },
+    "llm_rerank": {
+      "answer": "Passau",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6116888523101807,
+      "reranked_order": [
+        "response_2"
+      ],
+      "best_response_id": "response_2"
+    },
+    "sentence_transformer": {
+      "answer": "Passau",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.30633807182312,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Passau",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.1569631099700928,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    }
+  },
+  "Who is the father of Giacomo Guardi?": {
+    "no_reranking": {
+      "answer": "Giovanni Antonio Guardi",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      }
+    },
+    "llm_reranker": {
+      "answer": "Giovanni Antonio Guardi",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      },
+      "reranking_time": 1.0717310905456543,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Giovanni Antonio Guardi",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.5
+      },
+      "reranking_time": 0.7073757648468018,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Gian Antonio",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.6788249015808105,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "Gian Antonio",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.9802842140197754,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what country is Union State Bank, Wisconsin?": {
+    "no_reranking": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9001710414886475,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.944998025894165,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.1235671043395996,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.6658241748809814,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Tina?": {
+    "no_reranking": {
+      "answer": "Australia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Australia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.7299730777740479,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Australia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6049201488494873,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Latvian",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.8978638648986816,
+      "reranked_order": [
+        "response_2",
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Australia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.1108431816101074,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Pir Hayati?": {
+    "no_reranking": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9016058444976807,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9177181720733643,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.675980806350708,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.3927319049835205,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Bandrakottai?": {
+    "no_reranking": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7712199687957764,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9005088806152344,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.9722721576690674,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.624082326889038,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is \u00c9gligny?": {
+    "no_reranking": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.1059291362762451,
+      "reranked_order": [
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "llm_rerank": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7994461059570312,
+      "reranked_order": [
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "sentence_transformer": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.2013282775878906,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.6829171180725098,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what country is Borys\u0142awice?": {
+    "no_reranking": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8859729766845703,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9651031494140625,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.578779935836792,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.5488121509552,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Jelow Girangeh?": {
+    "no_reranking": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.674515962600708,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.614844799041748,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.7522497177124023,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.0813398361206055,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Freedom?": {
+    "no_reranking": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.229133129119873,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.2910680770874023,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 3.3935039043426514,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 3.1577281951904297,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Ciepie\u0144?": {
+    "no_reranking": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8061137199401855,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.8546309471130371,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.603341817855835,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.546348810195923,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Edmundston?": {
+    "no_reranking": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.759329080581665,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.0408601760864258,
+      "reranked_order": [
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 4.124643087387085,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.747847080230713,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Gaustadall\u00e9en?": {
+    "no_reranking": {
+      "answer": "Norway",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Norway",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.610476016998291,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Norway",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7131471633911133,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Norway",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.174046754837036,
+      "reranked_order": [
+        "response_2",
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Norway",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.094641923904419,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Lewa\u0142d Wielki?": {
+    "no_reranking": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.3995718955993652,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.1787431240081787,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.8851609230041504,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.5059430599212646,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what country is D\u0105bkowice, \u0141\u00f3d\u017a Voivodeship?": {
+    "no_reranking": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.1843469142913818,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7664890289306641,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.9747037887573242,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 6.7496747970581055,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Valea Seac\u0103 River?": {
+    "no_reranking": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7843577861785889,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7268543243408203,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.5760891437530518,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.7182440757751465,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Ormak, Isfahan?": {
+    "no_reranking": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7332408428192139,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.682750940322876,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Julfa region",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.5940659046173096,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "Iran",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.446457862854004,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is West Wyomissing?": {
+    "no_reranking": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8350300788879395,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6226119995117188,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.6264030933380127,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "United States",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.3949880599975586,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Tigra?": {
+    "no_reranking": {
+      "answer": "Ethiopia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Ethiopia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6513252258300781,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Ethiopia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.7723538875579834,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Ethiopia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.418959140777588,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Ethiopia",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.333599090576172,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Jauldes?": {
+    "no_reranking": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7480769157409668,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6808290481567383,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "French",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.6666666666666666
+      },
+      "reranking_time": 2.2415409088134766,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.238569974899292,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Nowa Wie\u015b Reszelska?": {
+    "no_reranking": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9003369808197021,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8579988479614258,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.465963125228882,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Poland",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 2.1881961822509766,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Colonia Nueva Coneta?": {
+    "no_reranking": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.8057470321655273,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.8152918815612793,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Mexico",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 18.817018270492554,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 22.248623847961426,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Tholuvankadu?": {
+    "no_reranking": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8129498958587646,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6945269107818604,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Indian",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 6.893603086471558,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 8.463006973266602,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Anaikudam?": {
+    "no_reranking": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8444058895111084,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6859941482543945,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Pavoorchatram",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 18.59645414352417,
+      "reranked_order": [
+        "response_2",
+        "response_1",
+        "response_0"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 9.378655910491943,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Society of Early Americanists?": {
+    "no_reranking": {
+      "answer": "America",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "America",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.842432975769043,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "America",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.1109602451324463,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "America",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 4.86677885055542,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "America",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 22.320708990097046,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Mavjinjava?": {
+    "no_reranking": {
+      "answer": "South Africa",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "South Africa",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.205059051513672,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "South Africa",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.3088219165802002,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "India",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 8.395295858383179,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "South Africa",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 3.129549741744995,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Dr\u0103g\u0103neasa River?": {
+    "no_reranking": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9257831573486328,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.9199590682983398,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 4.464869022369385,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "Romania",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 9.881727933883667,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Bats\u00e8re?": {
+    "no_reranking": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.1360280513763428,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.711838960647583,
+      "reranked_order": [
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Indian state of Western Assam",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.25
+      },
+      "reranking_time": 1.6859009265899658,
+      "reranked_order": [
+        "response_2",
+        "response_0",
+        "response_1"
+      ],
+      "best_response_id": "response_2"
+    },
+    "ensemble": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 23.503920078277588,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Sabiote?": {
+    "no_reranking": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7788171768188477,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.6495978832244873,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Spain",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 6.0249903202056885,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "radiata pine",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 9.701421976089478,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what country is F\u00e2nt\u00e2neaua Rece River?": {
+    "no_reranking": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6772379875183105,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.5924930572509766,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.8817007541656494,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "France",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 11.574942827224731,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Scheidt?": {
+    "no_reranking": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6155238151550293,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.6047089099884033,
+      "reranked_order": [
+        "response_0"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Lithuania",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.900571823120117,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "American",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 2.5833899974823,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  },
+  "In what country is Toronto Northwest?": {
+    "no_reranking": {
+      "answer": "Ontario",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.8168377876281738,
+      "reranked_order": [
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 0.7416059970855713,
+      "reranked_order": [
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "Ontario",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 17.190793991088867,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 23.77094602584839,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what country is SWEAT?": {
+    "no_reranking": {
+      "answer": "Australian",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Britain",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 1.036773920059204,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "llm_rerank": {
+      "answer": "Britain",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 0.9258937835693359,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    },
+    "sentence_transformer": {
+      "answer": "Australian",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 5.362820148468018,
+      "reranked_order": [
+        "response_0",
+        "response_1",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "ensemble": {
+      "answer": "Britain",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 7.440573215484619,
+      "reranked_order": [
+        "response_1",
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_1"
+    }
+  },
+  "In what country is Zec Petawaga?": {
+    "no_reranking": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      }
+    },
+    "llm_reranker": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.042860984802246,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "llm_rerank": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 1.1182951927185059,
+      "reranked_order": [
+        "response_0",
+        "response_2"
+      ],
+      "best_response_id": "response_0"
+    },
+    "sentence_transformer": {
+      "answer": "Clova",
+      "metrics": {
+        "exact_match": 0.0,
+        "f1": 0.0
+      },
+      "reranking_time": 14.135067224502563,
+      "reranked_order": [
+        "response_1",
+        "response_2",
+        "response_0"
+      ],
+      "best_response_id": "response_1"
+    },
+    "ensemble": {
+      "answer": "Canada",
+      "metrics": {
+        "exact_match": 1.0,
+        "f1": 1.0
+      },
+      "reranking_time": 3.320233106613159,
+      "reranked_order": [
+        "response_0",
+        "response_2",
+        "response_1"
+      ],
+      "best_response_id": "response_0"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "llm_reranker": {
+        "exact_match": 0.5,
+        "f1": 0.6833333333333333,
+        "relevance_score": 0.0,
+        "generation_time": 0.0,
+        "reranking_time": 0.8400882959365845
+    },
+    "llm_rerank": {
+        "exact_match": 0.4,
+        "f1": 0.5833333333333333,
+        "relevance_score": 0.0,
+        "generation_time": 0.0,
+        "reranking_time": 0.9874069690704346
+    },
+    "sentence_transformer": {
+        "exact_match": 0.4,
+        "f1": 0.4666666666666666,
+        "relevance_score": 0.0,
+        "generation_time": 0.0,
+        "reranking_time": 2.8151868104934694
+    },
+    "ensemble": {
+        "exact_match": 0.5,
+        "f1": 0.6833333333333333,
+        "relevance_score": 0.0,
+        "generation_time": 0.0,
+        "reranking_time": 3.349491763114929
+    },
+    "no_reranking": {
+        "exact_match": 0.5,
+        "f1": 0.6166666666666666,
+        "relevance_score": 0.0,
+        "generation_time": 0.0,
+        "reranking_time": 0.0
+    }
+}
